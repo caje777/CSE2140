@@ -1,4 +1,4 @@
-function makeProblem() {
+function makeRandomProblem() {
   var firstNumber, secondNumber;
 
   if (mode.value.includes('Basic')) {
@@ -27,13 +27,23 @@ function makeProblem() {
   problemElement.textContent = firstNumber + ' ' + chooseSign + ' ' + secondNumber;
 }
 
+function generateProblem() {
+  var customProblem = document.getElementById('customProblem').value.trim();
+  if (customProblem) {
+    var problemElement = document.getElementById('problem');
+    problemElement.textContent = customProblem;
+  } else {
+    makeRandomProblem();
+  }
+}
+
 window.onload = function() {
-  makeProblem();
+  makeRandomProblem();
 
   var form = document.getElementById('form1');
   form.addEventListener('submit', function(event) {
     event.preventDefault();
-    makeProblem();
+    makeRandomProblem();
   });
 };
 
