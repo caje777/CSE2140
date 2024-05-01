@@ -4,11 +4,10 @@ function makeProblem() {
   if (mode.value.includes('Basic')) {
   firstNumber = Math.floor((Math.random() * 10) + 1);
   secondNumber = Math.floor((Math.random() * 10) + 1);
-  }
-  else {
+} else {
   firstNumber = Math.floor((Math.random() * 90) + 10);
   secondNumber = Math.floor((Math.random() * 90) + 10);
-
+}
     
   var chooseSign = ['+', '-', '*'][Math.floor(Math.random() * 3)];
   var problemElement = document.getElementById('problem');
