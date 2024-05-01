@@ -17,7 +17,6 @@ function makeProblem() {
     chooseSign = '*'
   }
 
-  var chooseSign = ['+', '-', '*'][Math.floor(Math.random() * 3)];
   var problemElement = document.getElementById('problem');
   problemElement.textContent = firstNumber + ' ' + chooseSign + ' ' + secondNumber;
 }
