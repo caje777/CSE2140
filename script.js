@@ -24,7 +24,7 @@ window.onload = function() {
   });
 };
 
-function answerCheck() {
+function checkAnswer() {
   var problem = document.getElementById('problem').textContent;
   var answer = document.getElementById('answer').value;
   var result = eval(problem);
