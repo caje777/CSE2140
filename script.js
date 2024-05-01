@@ -5,3 +5,7 @@ function makeProblem() {
   var problemElement = document.getElementById('problem');
   problemElement.textContent = firstNumber + ' ' + chooseSign + ' ' + secondNumber;
 }
+
+window.onload = function() {
+  makeProblem();
+};
