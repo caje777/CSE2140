@@ -28,3 +28,10 @@ window.onload = function() {
 function answerCheck() {
   var problem = document.getElementById('problem').textContent;
   var answer = document.getElementById('answer').value;
+  var result = eval(problem);
+  if (parseInt(answer) === result) {
+    alert('Correct!');
+  } else {
+    alert('Incorrect! The correct answer is ' + result);
+  }
+}
