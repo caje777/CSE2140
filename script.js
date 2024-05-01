@@ -8,9 +8,8 @@ function makeProblem() {
 
 window.onload = function() {
   makeProblem();
-};
 
-var form = document.getElementById('form1');
+  var form = document.getElementById('form1');
   form.addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent the default form submission
     makeProblem(); // Call makeProblem() when the form is submitted
