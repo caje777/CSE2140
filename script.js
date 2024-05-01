@@ -8,6 +8,14 @@ function makeProblem() {
     firstNumber = Math.floor((Math.random() * 90) + 10);
     secondNumber = Math.floor((Math.random() * 90) + 10);
   }
+  
+  if (mode.value.includes('Addition')) {
+    chooseSign = '+';
+  } else if (mode.value.includes('Subtraction')) {
+    chooseSign = '-';
+  } else {
+    chooseSign = '*'
+  }
 
   var chooseSign = ['+', '-', '*'][Math.floor(Math.random() * 3)];
   var problemElement = document.getElementById('problem');
