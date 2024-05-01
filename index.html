@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Caje's SCE2140 Module</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caje's SCE2140 Module</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script> <!-- Added 'defer' attribute for better script loading -->
+</head>
+<body>
+  <header>
     <h1>Math Equation</h1>
-    
+  </header>
+  
+  <section>
     <form name="form1" id="form1">
-      Subjects:
+      <label for="subject">Subjects:</label>
       <select name="subject" id="subject">
         <option value="Basic Addition">Basic Addition</option>
         <option value="Basic Subtraction">Basic Subtraction</option>
@@ -22,10 +26,13 @@
       <br><br>
       <input type="submit" value="Submit">
     </form>
-    
-      <h2>Solve this Equation:</h2>
-      <p id='problem'></p>
-      <input type='number' id='answer' placeholder='Enter Your Answer'>
-      <button onclick='checkAnswer()'>Check Answer</button>
-  </body>
+  </section>
+  
+  <section>
+    <h2>Solve this Equation:</h2>
+    <p id='problem'></p>
+    <input type='number' id='answer' placeholder='Enter Your Answer'>
+    <button onclick='checkAnswer()'>Check Answer</button>
+  </section>
+</body>
 </html>
