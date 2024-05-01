@@ -4,6 +4,11 @@ function makeProblem() {
   if (mode.value.includes('Basic')) {
     firstNumber = Math.floor((Math.random() * 10) + 1);
     secondNumber = Math.floor((Math.random() * 10) + 1);
+     if (mode.value.includes('Basic Subtraction') && firstNumber < secondNumber) {
+      var tempnumber = firstNumber;
+      firstNumber = secondNumber;
+      secondNumber = tempnumber;
+     }
   } else {
     firstNumber = Math.floor((Math.random() * 90) + 10);
     secondNumber = Math.floor((Math.random() * 90) + 10);
