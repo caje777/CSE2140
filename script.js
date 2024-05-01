@@ -5,7 +5,7 @@ function makeProblem() {
     firstNumber = Math.floor((Math.random() * 10) + 1);
     secondNumber = Math.floor((Math.random() * 10) + 1);
     
-    if (mode.value.includes('Basic Subtraction') && firstNumber < secondNumber) {
+    if (mode.value.includes('Basic') && mode.value.includes('Subtraction') && firstNumber < secondNumber) {
       var tempnumber = firstNumber;
       firstNumber = secondNumber;
       secondNumber = tempnumber;
