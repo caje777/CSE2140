@@ -1,6 +1,6 @@
 /* Got style from online. */
 body {
-  font-family: Arial, sans-serif;
+  font-family: sans-serif; /* Changed to sans-serif font */
   background-color: #1e2833; /* Dark blue background */
   color: #ffffff; /* White text */
   margin: 0;
@@ -18,7 +18,7 @@ header {
 }
 
 h1 {
-  color: #ff5733; /* Orange text */
+  color: #ff4500; /* Slightly darker orange */
 }
 
 section {
@@ -39,7 +39,7 @@ label {
 select {
   padding: 8px;
   border-radius: 5px;
-  background-color: #ff5733; /* Orange background */
+  background-color: #ff4500; /* Slightly darker orange background */
   color: #ffffff; /* White text */
   border: none;
   margin-bottom: 10px;
@@ -48,14 +48,14 @@ select {
 input[type="submit"] {
   padding: 10px 20px;
   border-radius: 5px;
-  background-color: #ff5733; /* Orange background */
+  background-color: #ff4500; /* Slightly darker orange background */
   color: #ffffff; /* White text */
   border: none;
   cursor: pointer;
 }
 
 input[type="submit"]:hover {
-  background-color: #d35400; /* Darker orange on hover */
+  background-color: #d43e00; /* Darker orange on hover */
 }
 
 h2 {
@@ -78,11 +78,11 @@ input[type="number"] {
 }
 
 button {
-  background-color: #ff5733; /* Orange background */
+  background-color: #ff4500; /* Slightly darker orange background */
   color: #ffffff; /* White text */
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #d35400; /* Darker orange on hover */
+  background-color: #d43e00; /* Darker orange on hover */
 }
