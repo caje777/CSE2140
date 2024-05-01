@@ -1,7 +1,7 @@
 body {
-  font-family: Georgia, serif; /* Changed to a serif font */
-  background-color: #1e2833; /* Dark blue background */
-  color: #ffffff; /* White text */
+  font-family: Georgia, serif;
+  background-color: #1e2833;
+  color: #ffffff;
   margin: 0;
   padding: 0;
   display: flex;
@@ -17,7 +17,7 @@ header {
 }
 
 h1 {
-  color: #ff6347; /* Slightly more red-shaded orange */
+  color: #ff6347;
 }
 
 section {
@@ -32,14 +32,14 @@ form {
 }
 
 label {
-  color: #ffffff; /* White text */
+  color: #ffffff;
 }
 
 select {
   padding: 8px;
   border-radius: 5px;
-  background-color: #ff6347; /* Slightly more red-shaded orange background */
-  color: #ffffff; /* White text */
+  background-color: #ff6347;
+  color: #ffffff;
   border: none;
   margin-bottom: 10px;
 }
@@ -47,22 +47,18 @@ select {
 input[type="submit"] {
   padding: 10px 20px;
   border-radius: 5px;
-  background-color: #ff6347; /* Slightly more red-shaded orange background */
-  color: #ffffff; /* White text */
+  background-color: #ff6347;
+  color: #ffffff;
   border: none;
   cursor: pointer;
 }
 
-input[type="submit"]:hover {
-  background-color: #d32f2f; /* Darker red on hover */
+input[type="submit"]:hover, button:hover {
+  background-color: #d32f2f;
 }
 
-h2 {
-  color: #ffffff; /* White text */
-}
-
-p {
-  color: #ffffff; /* White text */
+h2, p {
+  color: #ffffff;
 }
 
 input[type="number"],
@@ -77,11 +73,7 @@ input[type="number"] {
 }
 
 button {
-  background-color: #ff6347; /* Slightly more red-shaded orange background */
-  color: #ffffff; /* White text */
+  background-color: #ff6347;
+  color: #ffffff;
   cursor: pointer;
-}
-
-button:hover {
-  background-color: #d32f2f; /* Darker red on hover */
 }
