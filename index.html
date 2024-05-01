@@ -4,32 +4,29 @@
     <meta charset="UTF-8">
     <title>Caje's SCE2140 Module</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
   </head>
   <body>
     <h1>Math Equation</h1>
     
-    <form name="form1" id="form1" action="/action_page.php">
-      Subjects: <select name="subject" id="subject">
-        <option value="" selected="selected">Basic Addition</option>
-        <option value="" selected="selected">Basic Subtraction</option>
-        <option value="" selected="selected">Basic Multiplication</option>
-        <option value="" selected="selected">Advanced Addition</option>
-        <option value="" selected="selected">Advanced Subtraction</option>
-        <option value="" selected="selected">Advanced Multiplication</option>
-      </select>
-      <br><br>
+    <form name="form1" id="form1">
+      Subjects:
+      <select name="subject" id="subject">
+        <option value="Basic Addition">Basic Addition</option>
+        <option value="Basic Subtraction">Basic Subtraction</option>
+        <option value="Basic Multiplication">Basic Multiplication</option>
+        <option value="Advanced Addition">Advanced Addition</option>
+        <option value="Advanced Subtraction">Advanced Subtraction</option>
+        <option value="Advanced Multiplication">Advanced Multiplication</option>
       </select>
       <br><br>
       <input type="submit" value="Submit">
-    <h2>Solve this Equation:</h2>
-    <p id='problem'></p>
-    <input type='number' id='answer' placeholder='Enter Your Answer'>
-    <button onclick='checkAnswer()'>Check Answer</button>
-    <input type='text' placeholder='>
+      <h2>Solve this Equation:</h2>
+      <p id='problem'></p>
+      <input type='number' id='answer' placeholder='Enter Your Answer'>
+      <button onclick='checkAnswer()'>Check Answer</button>
+      <input type='text' placeholder='Enter your name'>
     </form>
-  </div>
-</div>
-
 
 
     
