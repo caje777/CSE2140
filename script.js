@@ -39,6 +39,7 @@ function generateProblem() {
 
 window.onload = function() {
   makeRandomProblem();
+  document.getElementById('generateButton').addEventListener('click', generateProblem);
 
   var form = document.getElementById('form1');
   form.addEventListener('submit', function(event) {
