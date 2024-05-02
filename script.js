@@ -46,16 +46,6 @@ window.onload = function() {
     event.preventDefault();
     makeRandomProblem();
   });
-  var modeSelect = document.getElementById('mode');
-  var generateButton = document.getElementById('generateButton');
-
-  modeSelect.addEventListener('change', function() {
-    if (modeSelect.value === 'Custom') {
-      generateButton.style.display = 'block';
-    } else {
-      generateButton.style.display = 'none';
-    }
-  });
 };
 
 function checkAnswer() {
