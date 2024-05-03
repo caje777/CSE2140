@@ -66,9 +66,17 @@ function checkAnswer() {
   var problem = document.getElementById('problem').textContent;
   var answer = document.getElementById('answer').value;
   var result = eval(problem);
+  var resultMessage = document.getElementById('resultMessage');
   if (parseInt(answer) === result) {
     message('Correct!');
   } else {
     message('Incorrect! The correct answer is ' + result);
   }
+  resultText.innerHTML = message + <br><button onclick='revealAnswer()'>Reveal Answer</button>
 }
+
+function reavealAnswer() {
+  var problem = document.getElementById('problem').textContent;
+  var result = eval(problem);
+  var resultMessage = document.getElementById('resultMessage');
+  resultMessage.innerHTML = 'The correct Answer was ' + result;
