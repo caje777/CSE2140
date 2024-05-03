@@ -60,7 +60,6 @@ window.onload = function() {
       makeRandomProblem();
     }
   });
-  document.getElementById('checkButton').addEventListener('click', checkAnswer);
 };
 
 function checkAnswer() {
