@@ -68,11 +68,11 @@ function checkAnswer() {
   var result = eval(problem);
   var resultText = document.getElementById('resultText');
   if (parseInt(answer) === result) {
-    message('Correct!');
+    resultText.innerHTML = 'Correct!';
   } else {
-    message('Incorrect! The correct answer is ' + result);
+    resultText = 'Incorrect! The correct answer is ' + result;
   }
-  resultText.innerHTML = message + '<br><button onclick='revealAnswer()'>Reveal Answer</button>'
+  resultText.innerHTML += '<br><button onclick='revealAnswer()'>Reveal Answer</button>';
 }
 
 function revealAnswer() {
