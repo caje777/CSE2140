@@ -1,5 +1,6 @@
 function makeRandomProblem() {
   var firstNumber, secondNumber;
+  var mode = document.getElementById('mode');
 
   if (mode.value.includes('Basic')) {
     firstNumber = Math.floor((Math.random() * 10) + 1);
@@ -14,7 +15,8 @@ function makeRandomProblem() {
     firstNumber = Math.floor((Math.random() * 90) + 10);
     secondNumber = Math.floor((Math.random() * 90) + 10);
   }
-  
+
+  var chooseSign;
   if (mode.value.includes('Addition')) {
     chooseSign = '+';
   } else if (mode.value.includes('Subtraction')) {
@@ -54,8 +56,11 @@ window.onload = function() {
       customProblemInput.style.display = 'block';
     } else {
       customProblemInput.style.display = 'none';
+      customProblemInput.value = '';
+      makeRandomProblem();
     }
   });
+  document.getElementById('checkButton').addEventListener('click', checkAnswer);
 };
 
 function checkAnswer() {
