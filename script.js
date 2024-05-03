@@ -72,10 +72,10 @@ function checkAnswer() {
   } else {
     message('Incorrect! The correct answer is ' + result);
   }
-  resultText.innerHTML = message + <br><button onclick='revealAnswer()'>Reveal Answer</button>
+  resultText.innerHTML = message + '<br><button onclick='revealAnswer()'>Reveal Answer</button>'
 }
 
-function reavealAnswer() {
+function revealAnswer() {
   var problem = document.getElementById('problem').textContent;
   var result = eval(problem);
   var resultText = document.getElementById('resultText');
