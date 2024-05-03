@@ -67,8 +67,8 @@ function checkAnswer() {
   var answer = document.getElementById('answer').value;
   var result = eval(problem);
   if (parseInt(answer) === result) {
-    alert('Correct!');
+    message('Correct!');
   } else {
-    alert('Incorrect! The correct answer is ' + result);
+    message('Incorrect! The correct answer is ' + result);
   }
 }
