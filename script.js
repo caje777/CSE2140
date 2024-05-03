@@ -66,7 +66,7 @@ function checkAnswer() {
   var problem = document.getElementById('problem').textContent;
   var answer = document.getElementById('answer').value;
   var result = eval(problem);
-  var resultMessage = document.getElementById('resultMessage');
+  var resultText = document.getElementById('resultText');
   if (parseInt(answer) === result) {
     message('Correct!');
   } else {
@@ -78,5 +78,5 @@ function checkAnswer() {
 function reavealAnswer() {
   var problem = document.getElementById('problem').textContent;
   var result = eval(problem);
-  var resultMessage = document.getElementById('resultMessage');
-  resultMessage.innerHTML = 'The correct Answer was ' + result;
+  var resultText = document.getElementById('resultText');
+  resultText.innerHTML = 'The correct Answer was ' + result;
