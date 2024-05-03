@@ -22,7 +22,7 @@ function makeRandomProblem() {
   } else if (mode.value.includes('Subtraction')) {
     chooseSign = '-';
   } else {
-    chooseSign = '*'
+    chooseSign = '*';
   }
 
   var problemElement = document.getElementById('problem');
@@ -65,7 +65,6 @@ window.onload = function() {
 function checkAnswer() {
   var problem = document.getElementById('problem').textContent;
   var answer = document.getElementById('answer').value;
-  var result = eval(problem);
   var resultText = document.getElementById('resultText');
   if (parseInt(answer) === result) {
     resultText.innerHTML = 'Correct!';
@@ -77,7 +76,6 @@ function checkAnswer() {
 
 function revealAnswer() {
   var problem = document.getElementById('problem').textContent;
-  var result = eval(problem);
   var resultText = document.getElementById('resultText');
   resultText.innerHTML = 'The correct Answer was ' + result;
 }
