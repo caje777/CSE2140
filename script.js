@@ -70,9 +70,9 @@ function checkAnswer() {
   if (parseInt(answer) === result) {
     resultText.innerHTML = 'Correct!';
   } else {
-    resultText = 'Incorrect! The correct answer is ' + result;
+    resultText.innerHTML = 'Incorrect! The correct answer is ' + result;
   }
-  resultText.innerHTML += '<br><button onclick='revealAnswer()'>Reveal Answer</button>';
+  resultText.innerHTML += '<br><button onclick="revealAnswer()">Reveal Answer</button>';
 }
 
 function revealAnswer() {
@@ -80,3 +80,4 @@ function revealAnswer() {
   var result = eval(problem);
   var resultText = document.getElementById('resultText');
   resultText.innerHTML = 'The correct Answer was ' + result;
+}
