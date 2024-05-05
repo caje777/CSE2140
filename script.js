@@ -2,6 +2,12 @@ function makeRandomProblem() {
   var firstNumber, secondNumber;
   var mode = document.getElementById('mode');
 
+  var resultText = document.getElementById('resultText'); 
+  var revealedAnswer = document.getElementById('revealedAnswer');
+
+  resultText.innerHTML = ''; 
+  revealedAnswer.innerHTML = '';
+  
   if (mode.value.includes('Basic')) {
     firstNumber = Math.floor((Math.random() * 10) + 1);
     secondNumber = Math.floor((Math.random() * 10) + 1);
@@ -31,6 +37,12 @@ function makeRandomProblem() {
 
 function generateProblem() {
   var customProblem = document.getElementById('customProblem').value.trim();
+  var resultText = document.getElementById('resultText'); 
+  var revealedAnswer = document.getElementById('revealedAnswer');
+
+  resultText.innerHTML = ''; 
+  revealedAnswer.innerHTML = '';
+
   if (customProblem) {
     var problemElement = document.getElementById('problem');
     problemElement.textContent = customProblem;
