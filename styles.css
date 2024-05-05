@@ -35,49 +35,45 @@ label {
   color: #ffffff;
 }
 
-select,
-input[type="number"],
-input[type="submit"],
-button {
-  padding: 10px 20px;
+select {
+  padding: 8px;
   border-radius: 5px;
   background-color: #915431;
   color: #ffffff;
   border: none;
   margin-bottom: 10px;
-  cursor: pointer;
 }
 
-select,
-input[type="number"],
-input[type="submit"],
-button {
-  display: block;
-  width: 100%;
-}
-
-input[type="submit"]:hover,
-button:hover {
-  background-color: #7d492c;
-}
-
-h2,
-p {
-  color: #ffffff;
-}
-
-#revealButton {
-  margin: 10px auto;
+input[type="submit"] {
   padding: 10px 20px;
   border-radius: 5px;
   background-color: #915431;
   color: #ffffff;
   border: none;
   cursor: pointer;
+}
 
-#customProblem {
-  width: 100%;
-  margin: 0 auto 10px;
+input[type="submit"]:hover, button:hover {
+  background-color: #7d492c;
+}
+
+h2, p {
+  color: #ffffff;
+}
+
+input[type="number"],
+button {
   padding: 8px;
   border-radius: 5px;
   border: none;
+}
+
+input[type="number"] {
+  width: 150px;
+}
+
+button {
+  background-color: #915431;
+  color: #ffffff;
+  cursor: pointer;
+}
