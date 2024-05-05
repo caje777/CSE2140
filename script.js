@@ -9,7 +9,6 @@ function makeRandomProblem() {
   resultText.innerHTML = ''; 
   revealedAnswer.innerHTML = '';
   revealButton.style.display = 'none';
-  revealButton.innerHTML = '<br><button style="display: none;"></button>';
   
   if (mode.value.includes('Basic')) {
     firstNumber = Math.floor((Math.random() * 10) + 1);
@@ -36,8 +35,6 @@ function makeRandomProblem() {
 
   var problemElement = document.getElementById('problem');
   problemElement.textContent = firstNumber + ' ' + chooseSign + ' ' + secondNumber;
-
-  revealButton.removeEventListener('click', revealAnswer);
 }
 
 function generateProblem() {
