@@ -73,6 +73,7 @@ function checkAnswer() {
     resultText.innerHTML = 'Incorrect!'
   }
   var revealButton = document.getElementById('revealButton');
+  revealButton.style.display = 'block';
   revealButton.addEventListener('click', revealAnswer);
   revealButton.innerHTML = '<br><button>Reveal Answer</button>';
 }
