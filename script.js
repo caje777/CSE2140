@@ -89,7 +89,7 @@ function checkAnswer() {
     var revealButton = document.getElementById('revealButton');
     revealButton.style.display = 'block';
     revealButton.addEventListener('click', revealAnswer);
-    revealButton.innerHTML = '<br><button style="display: block; margin: 0 auto;">Reveal Answer</button>';
+    revealButton.innerHTML = '<br><button style="display: block; margin: 0 auto; padding: 5px 10px;">Reveal Answer</button>';
   }
 }
 
