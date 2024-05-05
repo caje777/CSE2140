@@ -85,7 +85,7 @@ function checkAnswer() {
     resultText.innerHTML = 'Incorrect!'
   }
   var revealButton = document.getElementById('revealButton');
-  if (resultText.innterHTML === 'Incorrect!') {
+  if (resultText.innerHTML === 'Incorrect!') {
   revealButton.style.display = 'block';
   revealButton.addEventListener('click', revealAnswer);
   revealButton.innerHTML = '<br><button style="display: block;">Reveal Answer</button>';
