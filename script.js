@@ -75,7 +75,7 @@ function checkAnswer() {
   var revealButton = document.getElementById('revealButton');
   revealButton.style.display = 'block';
   revealButton.addEventListener('click', revealAnswer);
-  revealButton.innerHTML = '<br><button>Reveal Answer</button>';
+  revealButton.innerHTML = '<br><button style="display: block;">Reveal Answer</button>';
 }
 
 function revealAnswer() {
