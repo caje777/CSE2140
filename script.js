@@ -79,5 +79,5 @@ function revealAnswer() {
   var problem = document.getElementById('problem').textContent;
   var result = eval(problem);
   var resultText = document.getElementById('resultText');
-  resultText.revealedAnswer = 'The correct Answer was ' + result;
+  revealedAnswer.innerHTML = 'The correct Answer was ' + result;
 }
