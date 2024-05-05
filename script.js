@@ -72,6 +72,7 @@ function checkAnswer() {
   } else {
     resultText.innerHTML = 'Incorrect!'
   }
+  var revealButton = document.getElementById('revealButton');
   revealButton.innerHTML = '<br><button onclick="revealAnswer()">Reveal Answer</button>';
 }
 
@@ -79,5 +80,6 @@ function revealAnswer() {
   var problem = document.getElementById('problem').textContent;
   var result = eval(problem);
   var resultText = document.getElementById('resultText');
+  var revealedAnswer = document.getElementById('revealedAnswer');
   revealedAnswer.innerHTML = 'The correct Answer was ' + result;
 }
