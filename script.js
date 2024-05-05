@@ -4,9 +4,11 @@ function makeRandomProblem() {
 
   var resultText = document.getElementById('resultText'); 
   var revealedAnswer = document.getElementById('revealedAnswer');
+  var revealButton = document.getElementById('revealButton');
 
   resultText.innerHTML = ''; 
   revealedAnswer.innerHTML = '';
+  revealButton.style.display = 'none';
   
   if (mode.value.includes('Basic')) {
     firstNumber = Math.floor((Math.random() * 10) + 1);
