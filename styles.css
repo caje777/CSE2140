@@ -38,3 +38,7 @@ h1, h2 {
 form {
   margin: 0 auto;
 }
+
+#revealButton {
+  display: block;
+  margin: 0 auto;
