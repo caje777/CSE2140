@@ -28,7 +28,7 @@ function makeRandomProblem() {
   } else if (mode.value.includes('Subtraction')) {
     chooseSign = '-';
   } else {
-    chooseSign = '*'
+    chooseSign = '*';
   }
 
   var problemElement = document.getElementById('problem');
@@ -82,13 +82,11 @@ function checkAnswer() {
   if (parseInt(answer) === result) {
     resultText.innerHTML = 'Correct!';
   } else {
-    resultText.innerHTML = 'Incorrect!'
-  }
-  var revealButton = document.getElementById('revealButton');
-  if (resultText.innerHTML === 'Incorrect!') {
-  revealButton.style.display = 'block';
-  revealButton.addEventListener('click', revealAnswer);
-  revealButton.innerHTML = '<br><button style="display: block;">Reveal Answer</button>';
+    resultText.innerHTML = 'Incorrect!';
+    var revealButton = document.getElementById('revealButton');
+    revealButton.style.display = 'block';
+    revealButton.addEventListener('click', revealAnswer);
+    revealButton.innerHTML = '<br><button style="display: block;">Reveal Answer</button>';
   }
 }
 
