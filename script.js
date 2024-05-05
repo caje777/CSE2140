@@ -84,4 +84,6 @@ function revealAnswer() {
   var resultText = document.getElementById('resultText');
   var revealedAnswer = document.getElementById('revealedAnswer');
   revealedAnswer.innerHTML = 'The correct Answer was ' + result;
+  var revealButton = document.getElementById('revealButton'); 
+  revealButton.style.display = 'none';
 }
