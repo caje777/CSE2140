@@ -72,7 +72,7 @@ function checkAnswer() {
   } else {
     resultText.innerHTML = 'Incorrect!'
   }
-  resultText.innerHTML += '<br><button onclick="revealAnswer()">Reveal Answer</button>';
+  revealButton.innerHTML = '<br><button onclick="revealAnswer()">Reveal Answer</button>';
 }
 
 function revealAnswer() {
