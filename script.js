@@ -70,7 +70,7 @@ function checkAnswer() {
   if (parseInt(answer) === result) {
     resultText.innerHTML = 'Correct!';
   } else {
-    resultText.innerHTML = 'Incorrect! The correct answer is ' + result;
+    resultText.innerHTML = 'Incorrect!'
   }
   resultText.innerHTML += '<br><button onclick="revealAnswer()">Reveal Answer</button>';
 }
