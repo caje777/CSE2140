@@ -8,6 +8,7 @@ function makeRandomProblem() {
 
   resultText.innerHTML = ''; 
   revealedAnswer.innerHTML = '';
+  revealButton.style.display = 'none';
   revealButton.innerHTML = '<br><button style="display: none;"></button>';
   
   if (mode.value.includes('Basic')) {
@@ -22,7 +23,6 @@ function makeRandomProblem() {
   } else {
     firstNumber = Math.floor((Math.random() * 90) + 10);
     secondNumber = Math.floor((Math.random() * 90) + 10);
-    revealButton.innerHTML = '<br><button style="display: none;"></button>';
   }
 
   var chooseSign;
@@ -36,6 +36,8 @@ function makeRandomProblem() {
 
   var problemElement = document.getElementById('problem');
   problemElement.textContent = firstNumber + ' ' + chooseSign + ' ' + secondNumber;
+
+  revealButton.removeEventListener('click', revealAnswer);
 }
 
 function generateProblem() {
