@@ -44,6 +44,7 @@ function generateProblem() {
 
   resultText.innerHTML = ''; 
   revealedAnswer.innerHTML = '';
+  revealButton.style.display = 'none';
 
   if (customProblem) {
     var problemElement = document.getElementById('problem');
