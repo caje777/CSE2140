@@ -5,12 +5,10 @@ function makeRandomProblem() {
   var resultText = document.getElementById('resultText'); 
   var revealedAnswer = document.getElementById('revealedAnswer');
   var revealButton = document.getElementById('revealButton');
-  var answer = document.getElementById('answer');
     
   resultText.innerHTML = ''; 
   revealedAnswer.innerHTML = '';
   revealButton.style.display = 'none';
-  answer.innterHTML = "<input type='number' id='answer' placeholder='Enter Your Answer' value=''>"
   
   if (mode.value.includes('Basic')) {
     firstNumber = Math.floor((Math.random() * 10) + 1);
@@ -43,7 +41,10 @@ function generateProblem() {
   var customProblem = document.getElementById('customProblem').value.trim();
   var resultText = document.getElementById('resultText'); 
   var revealedAnswer = document.getElementById('revealedAnswer');
+  var revealButton = document.getElementById('revealButton');
 
+  customProblemInput.value = '';
+  
   resultText.innerHTML = ''; 
   revealedAnswer.innerHTML = '';
   revealButton.style.display = 'none';
