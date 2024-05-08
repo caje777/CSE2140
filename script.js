@@ -5,7 +5,8 @@ function makeRandomProblem() {
   var resultText = document.getElementById('resultText'); 
   var revealedAnswer = document.getElementById('revealedAnswer');
   var revealButton = document.getElementById('revealButton');
-
+  var =
+    
   resultText.innerHTML = ''; 
   revealedAnswer.innerHTML = '';
   revealButton.style.display = 'none';
