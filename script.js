@@ -10,6 +10,7 @@ function makeRandomProblem() {
   resultText.innerHTML = ''; 
   revealedAnswer.innerHTML = '';
   revealButton.style.display = 'none';
+  answer.innterHTML = "<input type='number' id='answer' placeholder='Enter Your Answer' value=''>"
   
   if (mode.value.includes('Basic')) {
     firstNumber = Math.floor((Math.random() * 10) + 1);
