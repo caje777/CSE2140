@@ -38,12 +38,12 @@ function makeRandomProblem() {
 }
 
 function generateProblem() {
-  var customProblem = document.getElementById('customProblem').value.trim();
+  var answer = document.getElementById('customProblem').value.trim();
   var resultText = document.getElementById('resultText'); 
   var revealedAnswer = document.getElementById('revealedAnswer');
   var revealButton = document.getElementById('revealButton');
 
-  customProblemInput.value = '';
+  answerInput.value = '';
   
   resultText.innerHTML = ''; 
   revealedAnswer.innerHTML = '';
