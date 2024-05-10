@@ -5,7 +5,7 @@ function makeRandomProblem() {
   var resultText = document.getElementById('resultText'); 
   var revealedAnswer = document.getElementById('revealedAnswer');
   var revealButton = document.getElementById('revealButton');
-    
+
   resultText.innerHTML = ''; 
   revealedAnswer.innerHTML = '';
   revealButton.style.display = 'none';
@@ -38,13 +38,10 @@ function makeRandomProblem() {
 }
 
 function generateProblem() {
-  var answer = document.getElementById('customProblem').value.trim();
+  var customProblem = document.getElementById('customProblem').value.trim();
   var resultText = document.getElementById('resultText'); 
   var revealedAnswer = document.getElementById('revealedAnswer');
-  var revealButton = document.getElementById('revealButton');
 
-  answerInput.value = '';
-  
   resultText.innerHTML = ''; 
   revealedAnswer.innerHTML = '';
   revealButton.style.display = 'none';
