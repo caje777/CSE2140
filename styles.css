@@ -26,8 +26,6 @@ input[type="text"], input[type="number"], select {
   margin: 5px;
   border: 1px solid #ccc;
   border-radius: 20px;
-  position: relative;
-  padding: 5px 10px;
 }
 
 header, section {
