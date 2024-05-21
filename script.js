@@ -69,6 +69,7 @@ window.onload = function() {
   modeSelect.addEventListener('change', function() {
     if (modeSelect.value === 'Custom') {
       customProblemInput.style.display = 'block';
+      customProblemInput.style.margin = 0;
     } else {
       customProblemInput.style.display = 'none';
       customProblemInput.value = '';
