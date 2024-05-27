@@ -45,7 +45,6 @@ function generateProblem() {
   resultText.innerHTML = ''; 
   revealedAnswer.innerHTML = '';
   revealButton.style.display = 'none';
-  customProblem.style.textAlign = 'center';
 
   if (customProblem) {
     var problemElement = document.getElementById('problem');
